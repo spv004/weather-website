@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+
+#disabled {
+  pointer-events: none;
+  cursor: default;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #26529e;
+}
+
+.active {
+  background-color: #4CAF50;
+</style>
+<body style="background-image:url(main.jpg)">
+<ul>
+  <li><a class="active" >Welcome</a></li>
+  <li><a href="contact\contact.html">Contact</a></li>
+  
+  <li style="float:right"><a href="login.html">Log out</a></li>
+</ul>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<a id=disabled href="https://forecast7.com/en/19d6972d77/palghar/" class="weatherwidget-io"  data-label_1="PALGHAR" data-label_2="WEATHER" data-theme="gray" >PALGHAR WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+</body>
+</html>
